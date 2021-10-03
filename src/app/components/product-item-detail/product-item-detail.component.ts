@@ -21,6 +21,7 @@ export class ProductItemDetailComponent implements OnInit {
 
   addToCart(product:product):void{
     this.cartService.addCart(product.id,product,this.selectedQuantity)
+    alert("Added to cart")
   }
 
 }
